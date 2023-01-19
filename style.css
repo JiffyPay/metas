@@ -326,6 +326,21 @@ a.text-primary:hover {
     font-size: 30px;
 }
 
+
+
+.dashboard-sales-alert {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px !important;
+}
+.dashboard-sales-alert svg {
+    /* margin: auto; */
+    font-size: 18px;
+}
+
 .status-state{
     padding: 7px 0;
     border-radius: 5px;
@@ -1521,4 +1536,97 @@ table .table-form .form-control{
     bottom: -20px;
     width: 100%;
     left: 0px;
+}
+
+
+
+
+.expense-box {
+    position: relative;
+    height: 74px;
+    width: 74px;
+    border-radius: 14px;
+    border: 1px solid #E8E9EB;
+    background: #F8F8F8;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.expense-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.expense-box.progress img {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    width: 40px;
+}
+
+.expense-box .btn {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background: #10141a37;
+    opacity: 0;
+    z-index: 2;
+    transition: .2s all ease-in-out;
+}
+.expense-box .btn span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 32px;
+    width: 32px;
+}
+.expense-box .btn:hover {
+    opacity: 1;
+}
+
+.expense-icon {
+    width: 98px;
+    height: 76px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-blue {
+    background-color: #4C9AFF;
+}
+.bg-yellow-bright {
+    background-color: #FFC400;
+}
+.bg-purple {
+    background-color: #998DD9;
+}
+.bg-chart-blue {
+    background-color: #4C6FFF;
+}
+.bg-chart-red {
+    background-color: #FF92AE;
+}
+.bg-bronze-light {
+    background: #FEF3F2;
+}
+
+.doughnut-container {
+    position: relative;
+}
+.doughnut-container .doughnut-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
