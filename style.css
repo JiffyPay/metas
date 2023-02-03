@@ -1221,6 +1221,29 @@ table .table-form .form-control{
 }
 
 
+.offline-page {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    z-index: 9999;
+    backdrop-filter: blur(4px);
+}
+.offline-page .card {
+    position: relative;
+    overflow-y: auto;
+    margin: auto;
+    max-width: 80vw;
+    max-height: 95vh;
+}
+
+@media screen and (max-width: 578px) {
+    .offline-page .card {
+        max-width: 970vw;
+    }
+}
 
 
 
